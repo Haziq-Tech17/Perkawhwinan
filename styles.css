@@ -1,0 +1,112 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 100vh;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.background {
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    background: url('https://raw.githubusercontent.com/Haziq-Tech17/Undangan-Perkahwinan/main/1.svg'), url('https://raw.githubusercontent.com/Haziq-Tech17/Undangan-Perkahwinan/main/2.svg');
+    background-size: cover;
+    animation: scrollBackground 20s linear infinite;
+}
+
+@keyframes scrollBackground {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+.menu-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+.menu-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.menu-item span {
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.contact-list img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.contact-list span {
+    font-size: 18px;
+    color: #333;
+}
+
+.content {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

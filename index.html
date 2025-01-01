@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="background"></div>
+        <button class="menu-btn">Menu</button>
+        <div class="menu">
+            <button class="menu-item" onclick="showContent('contacts')">
+                <img src="https://raw.githubusercontent.com/Haziq-Tech17/Undangan-Perkahwinan/main/contact.svg" alt="Hubungi">
+                <span>Hubungi</span>
+            </button>
+            <button class="menu-item" onclick="showContent('song')">
+                <img src="https://raw.githubusercontent.com/Haziq-Tech17/Undangan-Perkahwinan/main/circle%20play.svg" alt="Lagu">
+                <span>Lagu</span>
+            </button>
+            <button class="menu-item" onclick="showContent('location')">
+                <img src="https://raw.githubusercontent.com/Haziq-Tech17/Undangan-Perkahwinan/main/location.svg" alt="Lokasi">
+                <span>Lokasi</span>
+            </button>
+            <button class="menu-item" onclick="showContent('gifts')">
+                <img src="https://raw.githubusercontent.com/Haziq-Tech17/Undangan-Perkahwinan/main/gifts.svg" alt="Hadiah">
+                <span>Hadiah</span>
+            </button>
+            <button class="menu-item" onclick="showContent('rsvp')">
+                <img src="https://raw.githubusercontent.com/Haziq-Tech17/Undangan-Perkahwinan/main/rsvp.svg" alt="RSVP">
+                <span>RSVP</span>
+            </button>
+        </div>
+        <div id="contacts" class="content">
+            <ul class="contact-list">
+                <li>
+                    <a href="https://wa.me/60123456789"><img src="https://raw.githubusercontent.com/Haziq-Tech17/Undangan-Perkahwinan/main/whatsapp.svg" alt="WhatsApp"></a>
+                    <a href="tel:+60123456789"><img src="https://raw.githubusercontent.com/Haziq-Tech17/Undangan-Perkahwinan/main/contact.svg" alt="Phone"></a>
+                    <span>Ruslina</span>
+                </li>
+                <li>
+                    <a href="https://wa.me/60123456788"><img src="https://raw.githubusercontent.com/Haziq-Tech17/Undangan-Perkahwinan/main/whatsapp.svg" alt="WhatsApp"></a>
+                    <a href="tel:+601123149118"><img src="https://raw.githubusercontent.com/Haziq-Tech17/Undangan-Perkahwinan/main/contact.svg" alt="Phone"></a>
+                    <span>Zainudin</span>
+                </li>
+                <li>
+                    <a href="https://wa.me/601123149118"><img src="https://raw.githubusercontent.com/Haziq-Tech17/Undangan-Perkahwinan/main/whatsapp.svg" alt="WhatsApp"></a>
+                    <a href="tel:+601123149118"><img src="https://raw.githubusercontent.com/Haziq-Tech17/Undangan-Perkahwinan/main/contact.svg" alt="Phone"></a>
+                    <span>Azmira</span>
+                </li>
+            </ul>
+        </div>
+        <div id="song" class="content">
+            <iframe id="song-video" width="100%" height="200" src="https://www.youtube.com/embed/tvNSXS4x9nc?autoplay=1&mute=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div id="location" class="content">Location content here</div>
+        <div id="gifts" class="content">Gifts content here</div>
+        <div id="rsvp" class="content">RSVP content here</div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
